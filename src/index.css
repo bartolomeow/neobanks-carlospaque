@@ -1,41 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap");
+
 :root {
-  --font-family: 'Montserrat', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
-  --corp-color: #2D14C4;
+    --font-family: "Montserrat", "Segoe UI", -apple-system, BlinkMacSystemFont,
+        "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    --bg-color: #f2f6f9;
+    --corp-color: #2d14c4;
+}
+
+html {
+    background-color: var(--bg-color);
 }
 
 body {
   margin: 0;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: var(--font-family);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
-  scrollbar-width: auto;
-  scrollbar-color: #2a2d3a #000;
+    scrollbar-width: auto;
+    scrollbar-color: #2a2d3a #000;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 14px;
+    width: 14px;
 }
 
 *::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: var(--corp-color);
-  border-radius: 10px;
-  border: 2px solid #ffffff;
+    background: var(--corp-color);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
 }

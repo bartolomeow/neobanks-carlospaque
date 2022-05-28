@@ -1,4 +1,5 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, useEffect } from "react";
+import "./home.css";
 const Header = lazy(() => import("../../components/header/Header"));
 const Graphic_conversions = lazy(() =>
     import("../../components/graphic-conversions/Graphic-conversions.jsx")
@@ -18,11 +19,43 @@ const Transactions_count = lazy(() =>
 );
 
 const Home = () => {
+    useEffect(() => {
+        function handleResize() {
+            const title = document.getElementById("title");
+            if (window.innerHeight >= window.innerWidth) {
+                if (title) {
+                    title.innerHTML = `
+                            <h1 class="title-mobile">
+                                Transactions history
+                            </h1>
+                            <h2 class="subtitle-mobile">
+                                These are your monthly and daily actions. 📊
+                            </h2>
+                    `;
+                }
+            } else {
+                if (title) {
+                    title.innerHTML = `
+                    <h1 class="title-landscape">
+                    Dashboard
+                    </h1>  
+                    `;
+                }
+            }
+        }
+        window.addEventListener("resize", handleResize);
+        handleResize();
+    }, []);
+
     return (
         <>
-            <Suspense fallback={<div className="loader"></div>}>
-                <Header />
-            </Suspense>
+            <Header />
+            <div className="titlecontainer">
+                <div id="title">
+                    {" "}
+                    <h1 className="title-landscape">Dashboard</h1>
+                </div>
+            </div>
         </>
     );
 };

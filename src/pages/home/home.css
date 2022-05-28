@@ -1,0 +1,25 @@
+.titlecontainer {
+    padding: 10px 25px;
+    background-color: #e6e6e6;
+}
+
+.title-landscape {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.title-mobile {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40.3px;
+    margin-bottom: 0;
+}
+
+.subtitle-mobile {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23.51px;
+    margin-top: 0;
+}

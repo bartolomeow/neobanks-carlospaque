@@ -1,3 +1,34 @@
-nav {
+header {
     font-family: var(--font-family);
+    padding: 25px 40px 10px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BANKS-logo {
+    color: #4A35C5;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .25px;
+    line-height: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.config-icon svg {
+    display: block;
+    transition: .2s all;
+}
+
+.config-icon:hover svg {
+    transform: rotateZ(45deg);
+}
+
+@media screen and (orientation: portrait) {
+    .config-icon {
+        display: none;
+    }
 }
