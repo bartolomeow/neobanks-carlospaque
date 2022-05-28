@@ -89,3 +89,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+# Contacto
+
+https://www.linkedin.com/in/carlospaque/
+
+carlos@carlospaque.com
+
+https://www.carlospaque.com
