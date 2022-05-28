@@ -1,0 +1,33 @@
+.graphic-transactions-container {
+    padding: 5px 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.graphic-transactions-title {
+    color: #151522;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.graphic-transactions {
+    min-height: 250px;
+}
+
+.graphic-transactions-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.change-temporality-btn {
+    color: #6979F8;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 10px 20px;
+    border-bottom: 5px solid #6979f8;
+    margin-bottom: 25px;
+}

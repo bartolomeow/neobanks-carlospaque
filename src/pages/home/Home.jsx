@@ -7,7 +7,7 @@ const Graphic_conversions = lazy(() =>
 const Graphic_expenses = lazy(() =>
     import("../../components/graphic-expenses/Graphic-expenses.jsx")
 );
-const Graphic_transactions = lazy(() =>
+const GraphicTransactions = lazy(() =>
     import("../../components/graphic-transactions/Graphic-transactions.jsx")
 );
 const Navbar = lazy(() => import("../../components/navbar/Navbar"));
@@ -23,6 +23,7 @@ const Home = () => {
         function handleResize() {
             const title = document.getElementById("title");
             const titlecontainer = document.getElementById("titlecontainer");
+            const cards = document.getElementsByClassName("card");
             if (window.innerHeight >= window.innerWidth) {
                 if (title) {
                     title.innerHTML = `
@@ -35,6 +36,9 @@ const Home = () => {
                     `;
                     titlecontainer.classList.remove("bg-gray");
                 }
+                for (let i = 0; i < cards.length; i++) {
+                    cards[i].classList.add("boxshadow");
+                }
             } else {
                 if (title) {
                     title.innerHTML = `
@@ -43,6 +47,9 @@ const Home = () => {
                     </h1>  
                     `;
                     titlecontainer.classList.add("bg-gray");
+                }
+                for (let i = 0; i < cards.length; i++) {
+                    cards[i].classList.remove("boxshadow");
                 }
             }
         }
@@ -61,6 +68,7 @@ const Home = () => {
             </div>
             <section className="column1">
                 <TransactionsCount />
+                <GraphicTransactions />
             </section>
             <section className="column2"></section>
         </>
