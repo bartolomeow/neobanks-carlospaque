@@ -39,7 +39,7 @@ const renderCustomizedLabel = ({
     innerRadius,
     outerRadius,
     percent,
-    index
+    _index
 }) => {
     const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
     const x = cx + radius * Math.cos(-midAngle * RADIAN);
@@ -81,10 +81,10 @@ const Graphic_conversions = () => {
                                 fill="#8884d8"
                                 dataKey="value"
                             >
-                                {data_users.map((entry, index) => (
+                                {data_users.map((_entry, _index) => (
                                     <Cell
-                                        key={`cell-${index}`}
-                                        fill={COLORS[index % COLORS.length]}
+                                        key={`cell-${_index}`}
+                                        fill={COLORS[_index % COLORS.length]}
                                     />
                                 ))}
                             </Pie>

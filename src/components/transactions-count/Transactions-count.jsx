@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./transactions-count.css";
 
 const Transactions_count = () => {
-
     return (
         <>
             <div className="transactions-count-container">
