@@ -1,0 +1,15 @@
+nav {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 80%;
+    background-color: #2D14C4;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    z-index: 2;
+}

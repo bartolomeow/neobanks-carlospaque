@@ -56,3 +56,15 @@
         margin: 40px auto;
     }
 }
+
+@media screen and (orientation: portrait) {
+    .graphic-conversions-container {
+        display: none !important;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    nav {
+        display: none !important;
+    }
+}

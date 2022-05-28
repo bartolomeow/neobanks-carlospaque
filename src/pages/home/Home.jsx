@@ -60,6 +60,7 @@ const Home = () => {
     return (
         <>
             <Header />
+            <Navbar />
             <div id="titlecontainer">
                 <div id="title">
                     {" "}
