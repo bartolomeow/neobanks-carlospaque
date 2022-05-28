@@ -72,11 +72,13 @@ neobanks-carlospaque
 | recharts        | 2.1.10  |
 <br>
 
-## Project setup
+## Ejecución del código
+
+En la raíz del proyecto, en un PC con Node.js y npm instalados, ejecutar los siguientes comandos:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Ejecuta la aplicación en modo desarrollo.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
