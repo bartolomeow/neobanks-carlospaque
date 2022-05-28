@@ -38,11 +38,12 @@
     flex-direction: column;
     justify-content: space-around;
     border: 1px solid #e5e5e5;
+    margin-bottom: 30px;
 }
 
 .card-big {
-    width: 80%;
-    margin: 40px auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .boxshadow {
@@ -50,13 +51,26 @@
         rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.column1 {
-    
+.home {
+    overflow: hidden;
 }
 
-@media screen and (max-width: 1000px) {
-    .column1, .column2 {
-        display: block;
+
+@media screen and (min-width: 1200px) {
+    .content {
+        display: flex;
+    }
+    
+    .column1 {
+        flex: 1;
+        float: left;
+        width: 40%;
+    }
+    
+    .column2 {
+        flex: 1;
+        float: right;
+        width: 60%;
     }
 }
 
@@ -74,7 +88,7 @@
 }
 
 @media screen and (orientation: landscape) {
-    nav {
+    nav, .graphic-transactions-container {
         display: none !important;
     }
 }

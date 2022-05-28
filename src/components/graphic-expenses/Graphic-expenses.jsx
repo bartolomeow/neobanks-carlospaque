@@ -14,7 +14,7 @@ import "./graphic-expenses.css";
 
 const data_daily = [
     {
-        Date: "2022-05-20",
+        Date: "Thu",
         Open: "8464.900391",
         High: "8546.900391",
         Low: "8456.099609",
@@ -23,7 +23,16 @@ const data_daily = [
         Volume: "172383300"
     },
     {
-        Date: "2022-05-23",
+        Date: "Fri",
+        Open: "8464.900391",
+        High: "8546.900391",
+        Low: "8456.099609",
+        Close: "8484.500000",
+        AdjClose: "8484.500000",
+        Volume: "172383300"
+    },
+    {
+        Date: "Sat",
         Open: "8600.400391",
         High: "8625.799805",
         Low: "8514.700195",
@@ -32,7 +41,7 @@ const data_daily = [
         Volume: "166876400"
     },
     {
-        Date: "2022-05-24",
+        Date: "Sun",
         Open: "8537.799805",
         High: "8654.000000",
         Low: "8534.299805",
@@ -41,7 +50,7 @@ const data_daily = [
         Volume: "207033000"
     },
     {
-        Date: "2022-05-25",
+        Date: "Mon",
         Open: "8723.099609",
         High: "8773.900391",
         Low: "8652.200195",
@@ -50,7 +59,7 @@ const data_daily = [
         Volume: "203488200"
     },
     {
-        Date: "2022-05-26",
+        Date: "Tue",
         Open: "8787.500000",
         High: "8901.200195",
         Low: "8780.000000",
@@ -59,7 +68,7 @@ const data_daily = [
         Volume: "203819800"
     },
     {
-        Date: "2022-05-27",
+        Date: "Wed",
         Open: "8904.000000",
         High: "8937.700195",
         Low: "8873.000000",

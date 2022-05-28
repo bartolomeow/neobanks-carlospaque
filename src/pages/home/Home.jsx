@@ -64,13 +64,15 @@ const Home = () => {
                     <h1 className="title-landscape">Dashboard</h1>
                 </div>
             </div>
-            <section className="column1">
-                <TransactionsCount />
-                <GraphicTransactions />
-                <GraphicConversions />
-            </section>
-            <section className="column2">
-                <GraphicExpenses />
+            <section className="content">
+                <section className="column1">
+                    <TransactionsCount />
+                    <GraphicTransactions />
+                    <GraphicConversions />
+                </section>
+                <section className="column2">
+                    <GraphicExpenses />
+                </section>
             </section>
         </>
     );
