@@ -32,6 +32,17 @@ Con ello `solucionamos dos problemas` que se está encontrando ahora mismo CAIXA
 
 Para mostrar el funcionamiento de la PWA, hemos rellenado los datos de gráficos con datos históricos del IBEX35 descargados de Yahoo Finance, estos datos se pueden encontrar en la carpeta `src/assets/ibex_daily.txt` y `src/assets/ibex_monthly.txt`.
 
+## Herramientas de validación del código
+
+Se valida que nuestro código es correcto con la herramienta Sonarcloud.io
+
+https://sonarcloud.io/summary/overall?id=bartolomeow_neobanks-carlospaque
+
+![Captura de pantalla de la revisión de código]
+(https://raw.githubusercontent.com/bartolomeow/neobanks-carlospaque/master/src/assets/CodeReview.jpg)
+
+Los code smells y vulnerabilidades detectadas son detectadas al usar un service-worker para nuestra PWA.
+
 
 ## Árbol de archivos
 
