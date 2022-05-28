@@ -4,16 +4,13 @@ const Header = lazy(() => import("../../components/header/Header"));
 const GraphicConversions = lazy(() =>
     import("../../components/graphic-conversions/Graphic-conversions.jsx")
 );
-const Graphic_expenses = lazy(() =>
+const GraphicExpenses = lazy(() =>
     import("../../components/graphic-expenses/Graphic-expenses.jsx")
 );
 const GraphicTransactions = lazy(() =>
     import("../../components/graphic-transactions/Graphic-transactions.jsx")
 );
 const Navbar = lazy(() => import("../../components/navbar/Navbar"));
-const Totalrevenue_count = lazy(() =>
-    import("../../components/totalrevenue-count/Totalrevenue-count")
-);
 const TransactionsCount = lazy(() =>
     import("../../components/transactions-count/Transactions-count")
 );
@@ -72,7 +69,9 @@ const Home = () => {
                 <GraphicTransactions />
                 <GraphicConversions />
             </section>
-            <section className="column2"></section>
+            <section className="column2">
+                <GraphicExpenses />
+            </section>
         </>
     );
 };

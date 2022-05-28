@@ -1,0 +1,72 @@
+.graphic-expenses-container {
+    padding: 5px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.graphic-expenses-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333333;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.68px;
+    text-align: left;
+}
+
+.temp-expenses {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: .25px;
+}
+
+.graphic-expenses {
+    min-height: 300px;
+}
+
+.graphic-expenses-title a {
+    margin: auto 0;
+    transition: .2s all;
+}
+
+.graphic-expenses-title a:hover {
+    transform: translateY(-3px);
+}
+
+.expenses-icon svg {
+    transition: .2s all;
+}
+
+.totalrevenue-title h3 {
+    color: #9C9C9C;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .4px;
+    text-align: left;
+}
+
+.totalrevenue-container {
+    margin-top: 60px;
+}
+
+.totalrevenue-num {
+    color: #333333;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.68px;
+    text-align: left;
+}
+
+.totalrevenue-benefits {
+    color: #4AAF05;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .4px;
+    margin-top: 8px;
+}

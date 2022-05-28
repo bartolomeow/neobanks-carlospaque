@@ -50,6 +50,16 @@
         rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.column1 {
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .column1, .column2 {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 300px) {
     .card {
         width: 80%;
@@ -58,7 +68,7 @@
 }
 
 @media screen and (orientation: portrait) {
-    .graphic-conversions-container {
+    .graphic-conversions-container, .graphic-expenses-container {
         display: none !important;
     }
 }

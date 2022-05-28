@@ -20,6 +20,11 @@
 
 .graphic-conversions-title a {
     margin: auto 0;
+    transition: .2s all;
+}
+
+.graphic-conversions-title a:hover {
+    transform: translateY(-3px);
 }
 
 .conversion-icon svg {

@@ -29,6 +29,11 @@
     line-height: 18px;
     padding: 10px 20px;
     margin-bottom: 25px;
+    transition: .2s all;
+}
+
+.change-temporality-btn:hover {
+    font-weight: 700;
 }
 
 .active-btn {
