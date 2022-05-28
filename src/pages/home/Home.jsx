@@ -1,7 +1,7 @@
 import React, { lazy, useEffect } from "react";
 import "./home.css";
 const Header = lazy(() => import("../../components/header/Header"));
-const Graphic_conversions = lazy(() =>
+const GraphicConversions = lazy(() =>
     import("../../components/graphic-conversions/Graphic-conversions.jsx")
 );
 const Graphic_expenses = lazy(() =>
@@ -69,6 +69,7 @@ const Home = () => {
             <section className="column1">
                 <TransactionsCount />
                 <GraphicTransactions />
+                <GraphicConversions />
             </section>
             <section className="column2"></section>
         </>

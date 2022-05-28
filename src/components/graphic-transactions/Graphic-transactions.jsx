@@ -2442,10 +2442,14 @@ const Graphic_transactions = () => {
 
     const changeTemporalityMonthly = () => {
         setTemporality("monthly");
+        document.getElementById("tempo-month").classList.add("active-btn");
+        document.getElementById("tempo-daily").classList.remove("active-btn");
     };
 
     const changeTemporalityDaily = () => {
         setTemporality("daily");
+        document.getElementById("tempo-daily").classList.add("active-btn");
+        document.getElementById("tempo-month").classList.remove("active-btn");
     };
 
     return (
@@ -2458,7 +2462,8 @@ const Graphic_transactions = () => {
                     <a
                         href="#"
                         onClick={changeTemporalityMonthly}
-                        className="change-temporality-btn"
+                        className="change-temporality-btn active-btn"
+                        id="tempo-month"
                     >
                         Monthly
                     </a>
@@ -2466,6 +2471,7 @@ const Graphic_transactions = () => {
                         href="#"
                         onClick={changeTemporalityDaily}
                         className="change-temporality-btn"
+                        id="tempo-daily"
                     >
                         Daily
                     </a>
@@ -2486,6 +2492,7 @@ const Graphic_transactions = () => {
                                     type="monotone"
                                     dataKey="Close"
                                     stroke="#6979F8"
+                                    dot={false}
                                 />
                                 <CartesianGrid stroke="#ccc" />
                                 <XAxis dataKey="Date" />
@@ -2509,6 +2516,7 @@ const Graphic_transactions = () => {
                                     type="monotone"
                                     dataKey="Close"
                                     stroke="#6979F8"
+                                    dot={false}
                                 />
                                 <CartesianGrid stroke="#ccc" />
                                 <XAxis dataKey="Date" />

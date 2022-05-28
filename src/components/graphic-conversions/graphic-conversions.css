@@ -1,0 +1,17 @@
+.graphic-conversions-container {
+    padding: 5px 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.graphic-conversions-title {
+    color: #333333;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.68px;
+    text-align: left;
+}
+
+.graphic-conversions {
+    min-height: 300px;
+}
