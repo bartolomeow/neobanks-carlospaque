@@ -1,0 +1,55 @@
+.transactions-count-container {
+    padding: 5px 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.transactions-card {
+    background-color: #fff;
+    border-radius: 10px;
+    min-height: 145px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    border: 1px solid #E5E5E5;
+}
+
+.transactions-title {
+    color: #171725;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.num-transactions {
+    color: #6979f8;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.time-transactions {
+    color: #999999;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.boxshadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media screen and (max-width: 300px) {
+    .transactions-count-container {
+        display: block;
+    }
+
+    .transactions-card {
+        margin: 40px auto;
+    }
+}

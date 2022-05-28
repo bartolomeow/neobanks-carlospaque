@@ -14,7 +14,7 @@ const Navbar = lazy(() => import("../../components/navbar/Navbar"));
 const Totalrevenue_count = lazy(() =>
     import("../../components/totalrevenue-count/Totalrevenue-count")
 );
-const Transactions_count = lazy(() =>
+const TransactionsCount = lazy(() =>
     import("../../components/transactions-count/Transactions-count")
 );
 
@@ -22,6 +22,7 @@ const Home = () => {
     useEffect(() => {
         function handleResize() {
             const title = document.getElementById("title");
+            const titlecontainer = document.getElementById("titlecontainer");
             if (window.innerHeight >= window.innerWidth) {
                 if (title) {
                     title.innerHTML = `
@@ -32,6 +33,7 @@ const Home = () => {
                                 These are your monthly and daily actions. 📊
                             </h2>
                     `;
+                    titlecontainer.classList.remove("bg-gray");
                 }
             } else {
                 if (title) {
@@ -40,6 +42,7 @@ const Home = () => {
                     Dashboard
                     </h1>  
                     `;
+                    titlecontainer.classList.add("bg-gray");
                 }
             }
         }
@@ -50,12 +53,16 @@ const Home = () => {
     return (
         <>
             <Header />
-            <div className="titlecontainer">
+            <div id="titlecontainer">
                 <div id="title">
                     {" "}
                     <h1 className="title-landscape">Dashboard</h1>
                 </div>
             </div>
+            <section className="column1">
+                <TransactionsCount />
+            </section>
+            <section className="column2"></section>
         </>
     );
 };
